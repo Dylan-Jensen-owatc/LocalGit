@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LocalGit
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void helloButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello world of Git!");
         }
     }
 }
